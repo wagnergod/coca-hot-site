@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+	<link rel="stylesheet" href="style.css">
+	<title>Coca Cola Website Landing Page</title>
+</head>
+<body>
+	
+
+<section>
+	<div class="circle"></div>
+	<header>
+		<a href="#"><img src="img/logo.png" class="logo"></a>
+		<ul class="navigation">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">What's New</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
+	<div class="content">
+		<div class="textBox">
+			<h2>Taste the Feeling</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque explicabo rem rerum illum odio minus, et autem voluptates minima velit! Sunt harum neque illum ad nam, provident culpa facere modi.</p>
+			<a href="#">Learn More</a>
+		</div>
+		<!--<div class="imgBox">
+			<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/cocacola1.png"> </div>
+      <div class="swiper-slide"><img src="img/cocacola2.png"> </div>
+      <div class="swiper-slide"><img src="img/cocacola3.png"> </div>
+      <div class="swiper-slide"><img src="img/cocacola4.png"> </div>
+      <div class="swiper-slide"><img src="img/cocacola5.png"> </div>
+      <div class="swiper-slide"><img src="img/cocacola6.png"> </div>
+      
+    </div>  -->
+				
+			</div>
+		</div>
+	</div>
+	<ul class="sci">
+		<li><a href="#"><img src="img/facebook.png"></a></li>
+		<li><a href="#"><img src="img/twitter.png"></a></li>
+		<li><a href="#"><img src="img/instagram.png"></a></li>
+	</ul>
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="module">
+    import Swiper from 'swiper/swiper-bundle.esm.js';
+    import 'swiper/swiper-bundle.css';
+    var swiper = new Swiper('.swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+</body>
+</html>
